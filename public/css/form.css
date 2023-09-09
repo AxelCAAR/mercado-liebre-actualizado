@@ -1,0 +1,290 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+    /*--------HEEADER--------*/
+
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+    padding: 15px;
+    width: 100vw;
+}
+.top-header{
+    display: inline-flex;
+    width: 100%;
+    padding-block: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-header #logo{
+    width: 45%;
+}
+.top-header .buscador{
+    width: 45%;
+}
+.top-header .buscador-texto{
+    border-radius: 5px;
+    border: white solid 1px;
+    padding: 8px 5px;
+    width: 80%;
+}
+.top-header .buscador-boton{
+    display: none;
+}
+
+.top-header .sugerencia{
+    display: inline-flex;
+    justify-content: center;
+    padding-block: 10px;
+    width: 100%;
+}
+
+.navbar-header .lista{
+    list-style-type: none;
+    display: none;
+}
+
+.navbar-header .lista li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .burger-menu-box{
+    text-align: center;
+}
+
+header .burger-menu{
+    background-color: #1259c3;
+    font-size: 20px;
+    color: white;
+    padding: 8px 10px 6px;
+    border-style: solid;
+    border-radius: 20%;
+    border: 0px;
+}
+
+    /*--------MAIN--------*/
+
+main{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-log-reg{
+    margin: 20px 0;
+
+}
+.register-form{
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    background-color: #ebebeb;
+    width: 100%;
+}
+.register-form .title-form{
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.register-form input{
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+.register-form .non-select-form input{
+    width: 100%;
+    border: solid 0px #9c9c9c;
+    border-radius: 8px;
+}
+
+.register-form .user-profile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register-form .user-interest{
+    display: block;
+}
+.register-form .interest-form{
+    margin-bottom: 10px;
+}
+.register-form .button-form{
+    padding: 15px 10px;
+    margin: 10px;
+    background-color: #1259c3;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    transition: all 400ms;
+}
+.register-form .button-form:hover{
+    background-color: #0022AA;
+}
+
+    /*--------FOOTER--------*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+footer section{
+    padding: 30px;
+}
+footer section i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+footer section i:hover{
+    color: #0022AA;
+}
+footer section .sugerencia-titulo{
+    margin: 2px;
+}
+footer section .sugerencia-parrafo{
+    margin: 2px;
+    padding-inline: 10px;
+}
+
+@media (min-width: 481px) {
+
+        /*--------HEADER--------*/
+
+    .top-header {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-header{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .top-header #logo{
+        width: 30%;
+    }
+    .top-header .buscador{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .top-header .buscador-texto{
+        width: 80%;
+        box-shadow: none;
+        transition: all 0.3s;
+    }
+    .top-header .buscador-boton{
+        display: inline-block;
+    }
+    .top-header .sugerencia{
+        width: 40%;
+    }
+    .navbar-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar-header .lista-login{
+        justify-content: flex-end;
+    }
+    .navbar-header .lista li{
+        margin: 0 10px;
+    }
+    
+    header .lista{
+        list-style-type: none;
+        display: initial;
+    }
+    header .burger-menu{
+        display: initial;
+    }
+
+    /*--------MAIN--------*/
+
+    main{
+        height: 40%;
+    }
+    .register-form {
+        width: 80%;
+        display: flex;
+        height: 75%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 769px) {
+
+    body {
+            width: 100vw;
+        }
+
+    /*--------HEADER--------*/
+
+    .top-header{
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    .top-header .buscador-texto{
+        width: 85%;
+    }
+    
+    .top-header #logo{
+        max-width: 280px;
+    }
+    .top-header .sugerencia{
+        width: 25%;
+    }
+    .burger-menu-box{
+        display: none;
+    }
+    .navbar-header .lista{
+        display: flex;
+        width: 50%;
+    }
+    .navbar-header .lista li{
+        margin: 0 16px;
+    }
+    
+
+    /*--------MAIN--------*/
+
+    main{
+        height: 50%;
+    }
+    .title-log-reg{
+        margin: 30px 0;
+        
+    }
+    .register-form{
+        margin: 15px 0px 8%;
+        max-width: 1000px;
+    }
+        
+    /*--------FOOTER--------*/
+
+    footer{
+        height: 50%;
+    }
+    footer .sugerencias-footer{
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+    footer .copyright-box{
+        display: block;
+    }
+
+
+}
